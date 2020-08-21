@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <title>Meu primeiro programa</title>
+    <style>
+        body {
+            background-color: rgb(223, 223, 223); /* Comentário em CSS */
+            color: rgb(149, 192, 233);
+            font: normal 20pt Arial;        
+        }
+        h1 {
+            color: rgb(255, 175, 166);
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello!</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, soluta debitis neque maiores reprehenderit provident quam qui vero repudiandae eius eveniet ex suscipit sint aliquam maxime minus totam impedit necessitatibus!</p> <!-- Comentário em HTML -->
+
+    <script>
+    /* CONCATENAÇÃO E SOMA:
+
+        var n1 = window.prompt('Digite um número') //string
+        var n2 = window.prompt('Digite outro número') //string 
+        var soma = n1 + n2 // Concatenação
+        window.alert('A soma dos números é ' + soma)
+
+        number + number para adição
+        string + string para concatenação
+
+        Number.parseInt = inteiros
+        Number.parseFloat = real
+        Number = para tudo
+    */
+
+        var n1 = Number.parseInt(window.prompt('Digite um número')) //convertido para number
+        var n2 = Number.parseFloat(window.prompt('Digite outro número'))
+        var soma = n1 + n2 
+        window.alert(`A soma entre ${n1} e ${n2} é igual a ${soma}`) 
+        
+
+    /* Para converter number to string:
+        String (n) OU n.toString()
+    */ 
+
+    /* 
+        var s = 'JavaScript'
+        'Eu estou aprendendo s'     > não faz interpolação
+        'Eu estou aprenendo' + s    > usa concatenação
+        `Eu estou aprendendo ${s}`  > usa template string - place holder
+
+        s.lenght            > quantos caracteres a string tem
+        s.toUpperCase()     > tudo para 'MAIÚSCULAS'
+        s.toLowerCase()     > tudo para 'minúsculas'
+
+        NODE JS:
+        > nome = 'Rebeca'
+        > idade = '26'
+        > nota = 10
+        > 'A aluna ' + nome + ' com ' + idade + ' anos tirou a nota ' + nota '  
+        > `A aluna ${nome} com ${idade} tirou a nota ${nota}`
+    
+
+    */
+    
+
+    </script>
+
+</body>
+</html>
