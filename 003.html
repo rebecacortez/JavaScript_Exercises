@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio: Formatando Strings</title>
+    <style>
+        body {
+            font: normal 20pt Arial
+        }
+    </style>
+</head>
+<body>
+    
+<script>
+/* 
+    Formatando strings:
+        s.lenght            > quantos caracteres a string tem
+        s.toUpperCase()     > tudo para 'MAIÚSCULAS'
+        s.toLowerCase()     > tudo para 'minúsculas'
+*/
+    var nome = window.prompt('Qual é o seu nome?')
+    document.write(`Olá <strong>${nome}</strong>, seu nome tem ${nome.length} letras.</br>`)
+    document.write(`Seu nome em letras maiúsculas é ${nome.toUpperCase()}. </br>`) 
+    document.write(`Seu nome em letras minúsculas é ${nome.toLowerCase()}.`)
+/*
+    Formatando números:
+        var n1 = 1543.5
+        n1
+        n1.toFixed(2)                           > final com 2 casas 
+        n1.toFixed(2).replace ('.' , ',')       > troca . por ,
+        n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+        n1.toLocaleString('pt-BR', {style: 'currency', currency: 'EUR'})
+        n1.toLocaleString('pt-BR', {style: 'currency', currency: 'USD'})
+
+*/
+
+</script>
+
+</body>
+</html>
